@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Бронирование номера в отеле</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__header">
+        <h1>Бронирование номера в отеле</h1>
+        <hr />
+      </div>
+      <div class="form__body">
+        <div class="form__group">
+          <label for="name">Имя</label><br />
+          <input type="text" name="name" id="name" class="form__control" />
+        </div>
+        <div class="form__group">
+          <label for="surname">Фамилия</label><br />
+          <input type="text" name="surname" id="surname" class="form__control" />
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__control"
+            placeholder="example@mail.ru"
+          />
+        </div>
+        <div class="form__group">
+          <label for="phone">Телефон</label><br />
+          <input type="tel" name="phone" id="phone" class="form__control" />
+        </div>
+        <div class="form__group">
+          <label for="arrival">Дата заезда</label><br />
+          <input type="date" name="arrival" id="arrival" class="form__control" />
+        </div>
+        <div class="form__group">
+          <label for="departure">Дата выезда</label><br />
+          <input type="date" name="departure" id="departure" class="form__control" />
+        </div>
+        <div class="form__group">
+          <label for="room-type">Тип номера</label><br />
+          <select name="room-type" id="room-type" class="form__control">
+            <option value="">--выберите--</option>
+            <option value="standart">Стандартный</option>
+            <option value="suite">Люкс</option>
+            <option value="presidential">Президентский</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="requests">Дополнительные запросы</label><br />
+          <textarea name="requests" id="requests" class="form__control form__control--grow"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="form__submit">
+        Забронировать
+      </button>
+    </form>
+  </body>
+</html>
